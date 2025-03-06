@@ -1,4 +1,4 @@
-class ForMyJob extends Thread {
+class FindSquare extends Thread {
 
     void square(int num) {
         System.out.println("Square is: " + num * num);
@@ -13,7 +13,7 @@ class ForMyJob extends Thread {
 
 public class Multithreading {
     public static void main(String[] args) {
-        ForMyJob t1 = new ForMyJob();
-        t1.start();
+        FindSquare t1 = new FindSquare();
+        t1.run();
     }
 }
